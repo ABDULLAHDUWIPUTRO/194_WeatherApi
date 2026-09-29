@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cari Lokasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <span class="badge">● ABDULLAH DUWIPUTRO - 194 - WEATHER API</span>
+    <h1>Cari <span>Lokasi</span></h1>
+    <p class="sub">Temukan negara, provinsi, kecamatan, dan koordinat dari lokasi mana pun.</p>
+
+    <div class="search">
+      <span class="icon">🔍</span>
+      <input type="text" id="lokasi" placeholder="Contoh: Riau, Rengat" autocomplete="off">
+      <button id="btnCari">Cari</button>
+    </div>
+
+    <p id="status"></p>
+
+    <section id="hasil" hidden>
+      <div class="place">
+        <small>📍 Lokasi</small>
+        <b id="outLokasi"></b>
+      </div>
+
+      <div class="grid">
+        <div class="item"><small>🌏 Negara</small><b id="outNegara"></b></div>
+        <div class="item"><small>🏛️ Provinsi</small><b id="outProvinsi"></b></div>
+        <div class="item full"><small>🏘️ Kecamatan</small><b id="outKecamatan"></b></div>
+        <div class="item"><small>↔️ Longitude</small><b class="mono" id="outLng"></b></div>
+        <div class="item"><small>↕️ Latitude</small><b class="mono" id="outLat"></b></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
